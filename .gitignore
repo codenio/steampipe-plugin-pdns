@@ -33,3 +33,7 @@ node_modules
 
 # Ignore dist folders
 dist/
+
+develop
+
+*.sql
