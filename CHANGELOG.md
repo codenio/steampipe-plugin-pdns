@@ -1,6 +1,6 @@
-## v0.0.1 [TBD]
+## v0.0.1 [2025-05-27]
 
 _What's new?_
 
 - New tables added
-  - [template_sample](https://hub.steampipe.io/plugins/turbot/template/tables/template_sample) ([#1](https://github.com/turbot/steampipe-plugin-template/pull/1))
+  - [pdns_zone]()

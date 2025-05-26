@@ -1,11 +1,12 @@
 package main
 
 import (
+	"github.com/codenio/steampipe-plugin-pdns/pdns"
+
 	"github.com/turbot/steampipe-plugin-sdk/v5/plugin"
-	"github.com/turbot/steampipe-plugin-template/template"
 )
 
 func main() {
 	plugin.Serve(&plugin.ServeOpts{
-		PluginFunc: template.Plugin})
+		PluginFunc: pdns.Plugin})
 }
