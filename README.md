@@ -1,13 +1,13 @@
 <!-- ![image](https://hub.steampipe.io/images/plugins/turbot/aws-social-graphic.png) -->
 
-# Pdns Plugin for Steampipe
+# PowerDNS Plugin for Steampipe
 
-Use SQL to query zones, records and more from PDNS.
+Use SQL to query zones, records, statistics and more from PowerDNS.
 
-- **[Get started →](https://hub.steampipe.io/plugins/turbot/pdns)**
+- **[Get started →](https://hub.steampipe.io/plugins/codenio/pdns)**
 - Documentation: [Table definitions & examples](https://hub.steampipe.io/plugins/codenio/pdns/tables)
 - Community: [Join #steampipe on Slack →](https://turbot.com/community/join)
-- Get involved: [Issues](https://github.com/turbot/steampipe-plugin-aws/issues)
+- Get involved: [Issues](https://github.com/codenio/steampipe-plugin-pdns/issues)
 
 ## Quick start
 
@@ -17,11 +17,31 @@ Install the plugin with [Steampipe](https://steampipe.io):
 steampipe plugin install pdns
 ```
 
+Configure the PowerDNS connection:
+
+```shell
+cp config/* ~/.steampipe/config
+vi ~/.steampipe/config/pdns.spc
+```
+
 Run a query:
 
 ```sql
-select name, url from pdns_zone
+select 
+  name,
+  kind,
+  dnssec,
+  serial 
+from 
+  pdns_zone;
 ```
+
+## Available Tables
+
+- `pdns_zone` - DNS zones managed by PowerDNS
+- `pdns_record` - DNS records within zones
+- `pdns_statistic` - PowerDNS server statistics
+- `pdns_config` - PowerDNS server configuration
 
 ## Developing
 
@@ -73,6 +93,5 @@ This repository is published under the [Apache 2.0](https://www.apache.org/licen
 **[Join #steampipe on Slack →](https://turbot.com/community/join)**
 
 Want to help but don't know where to start? Pick up one of the `help wanted` issues:
-
 - [Steampipe](https://github.com/turbot/steampipe/labels/help%20wanted)
-- [pdns Plugin](https://github.com/codenip/steampipe-plugin-pdns/labels/help%20wanted)
+- [PowerDNS Plugin](https://github.com/codenio/steampipe-plugin-pdns/labels/help%20wanted)

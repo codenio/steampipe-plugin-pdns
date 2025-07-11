@@ -18,14 +18,10 @@ func Plugin(ctx context.Context) *plugin.Plugin {
 			NewInstance: ConfigInstance,
 		},
 		TableMap: map[string]*plugin.Table{
-			"pdns_zone": tablePdnsZone(),
-			// "pdns_folder":            tablepdnsFolder(),
-			// "pdns_freestyle_project": tablepdnsFreestyleProject(),
-			// "pdns_job":               tablepdnsJob(),
-			// "pdns_node":              tablepdnsNode(),
-			// "pdns_pipeline":          tablepdnsPipeline(),
-			// "pdns_plugin":            tablepdnsPlugin(),
-			// "pdns_user":              tablepdnsUser(),
+			"pdns_zone":      tablePdnsZone(),
+			"pdns_record":    tablePdnsRecord(),
+			"pdns_statistic": tablePdnsStatistic(),
+			"pdns_config":    tablePdnsConfig(),
 		},
 	}
 
