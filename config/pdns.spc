@@ -1,5 +1,5 @@
 connection "pdns" {
-  plugin = "pdns"
+  plugin = "ghcr.io/codenio/pdns"
 
   # PowerDNS API server URL (Required)
   # Can also be set with PDNS_URL environment variable
