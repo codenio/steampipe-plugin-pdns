@@ -44,7 +44,7 @@ func connectUncached(ctx context.Context, d *plugin.QueryData, _ *plugin.Hydrate
 
 	// Error if the minimum config is not set
 	if server_url == "" || vhost == "" || api_key == "" {
-		return nil, errors.New("'server_url', 'username' and 'api_key' must be set in the connection configuration. Edit your connection configuration file and then restart Steampipe.")
+		return nil, errors.New("'server_url', 'username' and 'api_key' must be set in the connection configuration. Edit your connection configuration file and then restart Steampipe")
 	}
 
 	return powerdns.New(server_url, vhost, powerdns.WithAPIKey(api_key)), nil
