@@ -14,7 +14,7 @@ Use SQL to query zones, records, statistics and more from PowerDNS.
 Install the plugin with [Steampipe](https://steampipe.io):
 
 ```shell
-steampipe plugin install pdns
+steampipe plugin install codenio/pdns
 ```
 
 Configure the PowerDNS connection:

@@ -50,7 +50,7 @@ from
 Download and install the latest PowerDNS plugin:
 
 ```bash
-steampipe plugin install pdns
+steampipe plugin install codenio/pdns
 ```
 
 ### Configuration
