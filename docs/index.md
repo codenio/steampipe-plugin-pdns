@@ -1,6 +1,6 @@
 ---
 organization: Turbot
-category: ["networking"]
+category: ["internet"]
 icon_url: "/images/plugins/codenio/pdns.svg"
 brand_color: "#F48220"
 display_name: "PowerDNS"

@@ -11,7 +11,7 @@ connection "pdns" {
 
   # PowerDNS API key (Required)
   # Can also be set with PDNS_APIKEY environment variable
-  # api_key = "your-api-key-here"
+  # api_key = "ODl4Tkx2c3erZnY4W***"
 
   # For more information about PowerDNS API configuration:
   # https://doc.powerdns.com/authoritative/http-api/index.html
