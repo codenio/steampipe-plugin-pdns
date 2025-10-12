@@ -1,6 +1,6 @@
 module github.com/codenio/steampipe-plugin-pdns
 
-go 1.23.3
+go 1.24
 
 require (
 	github.com/joeig/go-powerdns/v3 v3.16.0
